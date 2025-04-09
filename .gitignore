@@ -1,39 +1,41 @@
-HELP.md
-.gradle
-build/
-!gradle/wrapper/gradle-wrapper.jar
-!**/src/main/**/build/
-!**/src/test/**/build/
+# Rust
+/target
+**/*.rs.bk
+Cargo.lock
 
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-bin/
-!**/src/main/**/bin/
-!**/src/test/**/bin/
+# Build Artifacts
+debug/
+release/
 
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
-out/
-!**/src/main/**/out/
-!**/src/test/**/out/
-
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-
-### VS Code ###
+# IDEs e editores
+.idea/
 .vscode/
+*.swp
+*.swo
 
+# Arquivos temporários
+*.log
+*.tmp
+*.bak
+*.old
+
+# Ambiente
+.env
+.env.*.local
+
+# SQLx (se usar cache offline)
+sqlx-data.json
+
+# MacOS
 .DS_Store
+
+# Linux
+*~
+
+# Node (caso use scripts ou frontend embutido)
+node_modules/
+dist/
+
+# Docker (se for usar docker depois)
+*.tar
+*.img
